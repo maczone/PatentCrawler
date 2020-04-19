@@ -10,7 +10,8 @@ import os
 
 from datetime import datetime
 from logbook import Logger
-from pyecharts import Map, Page, Bar
+#from pyecharts import Map, Page, Bar
+from pyecharts.charts import Map, Page, Bar
 
 from config.base_settings import CHARTS_NAME
 from entity.models import Patents

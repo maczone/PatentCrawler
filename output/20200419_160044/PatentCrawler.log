@@ -1,0 +1,102 @@
+2020-04-19 16:00:45 [scrapy.utils.log] INFO: Scrapy 2.0.1 started (bot: crawler)
+2020-04-19 16:00:45 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1f  31 Mar 2020), cryptography 2.9, Platform Windows-10-10.0.10240-SP0
+2020-04-19 16:00:45 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-04-19 16:00:45 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawler',
+ 'COOKIES_DEBUG': True,
+ 'DOWNLOAD_DELAY': 1.0,
+ 'DOWNLOAD_TIMEOUT': 10,
+ 'LOG_FILE': 'G:\\BeACoder\\GitHub\\PatentCrawler\\output\\20200419_160044\\PatentCrawler.log',
+ 'NEWSPIDER_MODULE': 'crawler.spiders',
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['crawler.spiders']}
+2020-04-19 16:00:45 [scrapy.extensions.telnet] INFO: Telnet Password: e4de97a2fc3595db
+2020-04-19 16:00:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-04-19 16:00:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawler.middlewares.PatentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-04-19 16:00:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-04-19 16:00:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawler.pipelines.CrawlerPipeline']
+2020-04-19 16:00:45 [scrapy.core.engine] INFO: Spider opened
+2020-04-19 16:00:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-04-19 16:00:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-04-19 16:00:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 1 times): User timeout caused connection failure: Getting http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml took longer than 10.0 seconds..
+2020-04-19 16:01:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 2 times): User timeout caused connection failure: Getting http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml took longer than 10.0 seconds..
+2020-04-19 16:01:15 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 3 times): User timeout caused connection failure.
+2020-04-19 16:01:25 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 4 times): User timeout caused connection failure.
+2020-04-19 16:01:25 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:01:35 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:01:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:01:55 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:02:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:03:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:27 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:37 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:04:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:05:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:08 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:06:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:29 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:39 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:07:59 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:08:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:08:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:08:29 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:08:39 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:08:49 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:40 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:09:50 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:10:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:10:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:10:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:10:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
+2020-04-19 16:10:40 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2020-04-19 16:10:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): www.pss-system.gov.cn:80
